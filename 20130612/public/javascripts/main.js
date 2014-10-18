@@ -33,6 +33,7 @@ $(function(){
 		contactModal.find('.error').remove();
 	};
 	var clearContactForm = function(){
+        alert("clearContactForm");
 		$('#contactType').val('');
 		$('#contact').val('');
 		clearFormErrors();
@@ -70,7 +71,7 @@ $(function(){
 		.success(function(data){
 			success(data, contact);
 			contactModal.modal('hide');
-			clearContactForm();
+			//'onhidden' already calls clearContactForm();
 		})
 		.error(function(data){
 				var errors = $.parseJSON(data.responseText).errors;
@@ -132,7 +133,7 @@ $(function(){
 	});
 	userModal.on('hidden', function(){
 		clearUserFormErrors();
-		registerSaveCallback(createContactCallback);		
+		registerSaveCallback(createContactCallback);
 	});
 	var clearUserFormErrors = function(){
 		userModal.find('.error').remove();

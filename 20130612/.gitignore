@@ -5,6 +5,7 @@ target
 tmp
 .history
 dist
+app/assets/javascripts/**/*.js.map
 /.idea
 /*.iml
 /out

@@ -9,4 +9,6 @@ resolvers += "Sonatype snapshots" at "http://oss.sonatype.org/content/repositori
 // Use the Play sbt plugin for Play projects
 addSbtPlugin("com.typesafe.play" % "sbt-plugin" % "2.2.1")
 
-addSbtPlugin("com.github.mpeltonen" % "sbt-idea" % "1.6.0")
+addSbtPlugin("com.github.mumoshu" % "play2-typescript" % "0.3.0-RC1")
+
+//addSbtPlugin("com.github.mpeltonen" % "sbt-idea" % "1.6.0")
